@@ -1,0 +1,62 @@
+{
+  "name": "multilingual-localization",
+  "version": "1.0.0",
+  "description": "A comprehensive multilingual support system for Markdown documentation",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --passWithNoTests",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write \"**/*.{ts,js,json,md}\"",
+    "translate": "node dist/scripts/translate.js",
+    "sync": "node dist/scripts/sync.js",
+    "quality-check": "node dist/scripts/quality-check.js",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "localization",
+    "markdown",
+    "translation",
+    "multilingual",
+    "documentation"
+  ],
+  "author": "SolaceNet",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "deepl-node": "^1.10.2",
+    "dotenv": "^16.3.1",
+    "glob": "^10.3.10",
+    "gray-matter": "^4.0.3",
+    "marked": "^9.1.5",
+    "node-fetch": "^3.3.2",
+    "openai": "^4.20.1",
+    "remark": "^15.0.1",
+    "remark-parse": "^11.0.0",
+    "remark-stringify": "^11.0.0",
+    "unified": "^11.0.4",
+    "yaml": "^2.3.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.10",
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.12.0",
+    "@typescript-eslint/parser": "^6.12.0",
+    "eslint": "^8.54.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "jest": "^29.7.0",
+    "prettier": "^3.1.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.3.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

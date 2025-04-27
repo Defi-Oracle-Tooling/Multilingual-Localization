@@ -6,7 +6,7 @@
 
 const { program } = require('commander');
 const path = require('path');
-const { synchronizeTranslations } = require('../localization/markdown-processor');
+const { synchronizeTranslations } = require('@solacenet/shared-markdown-utils');
 
 // Configure the command line interface
 program

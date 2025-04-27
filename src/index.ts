@@ -22,7 +22,7 @@ export {
 export { createTranslationService, translateText } from './localization/translation-service';
 
 // Export markdown processor
-export { translateMarkdownContent, translateMarkdownFile } from './localization/markdown-processor';
+export { translateMarkdownContent, translateMarkdownFile } from '@solacenet/shared-markdown-utils';
 
 // Export quality checker
 export {
